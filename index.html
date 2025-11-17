@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Gajihub</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>Selamat datang di</p>
+        <img src="./asset/logo_foot.png" alt="" />
+      </div>
+      <form action="/login" method="POST" id="login-form">
+        <div class="input-email">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Masukkan email" />
+        </div>
+        <div class="input-password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan password"
+          />
+          <i id="toggle" class="fa-solid fa-eye"></i>
+          <!-- <i class="fa-solid fa-eye-slash"></i> -->
+        </div>
+        <div class="input-reminder">
+          <div class="input-chekbox">
+            <input id="chek" type="checkbox" />
+            <label for="chek">Ingat saya</label>
+          </div>
+          <a href="">lupa password?</a>
+        </div>
+        <div class="tombol">
+          <button type="submit" id="masuk">Masuk</button>
+          <span></span>
+          <button type="submit" id="masuk-google">Sign in dengan Google</button>
+          <button type="submit" id="masuk-sso">Login dengan SSO</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <p>Powered By</p>
+      <img src="./asset/logo_foot.png" alt="" />
+      <p>© 2025 GajiHub. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
